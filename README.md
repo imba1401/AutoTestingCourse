@@ -1,0 +1,2 @@
+# AutoTestingCourse
+Курс по АФТ
