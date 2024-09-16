@@ -31,12 +31,9 @@ public class Day1 {
 
         System.out.println("\nСледующее задание 5");
 
-
-        for (int i = 1980; i < 2021; i++) {
-            if (i % 4 == 0) {
+        for (int i = 1980; i < 2021; i= i+4) {
                 System.out.println("Олимпиада " + i + " года");
             }
-        }
 
 
         System.out.println("\nСледующее задание 6");
