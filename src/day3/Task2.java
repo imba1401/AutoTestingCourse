@@ -15,7 +15,7 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         while (true) {
 
-            // я бы для понимания добавила бы еще ниже строчку и про делитель
+            // я бы для понимания добавила бы еще ниже строчку
             // System.out.println("Введите делимое");
             double a = scanner.nextDouble();
             //  System.out.println("Введите делитель");
