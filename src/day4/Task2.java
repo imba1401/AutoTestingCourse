@@ -11,10 +11,9 @@ package src.day4;
         Использовать сортировку запрещено.
 */
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class Task2 {
     public static void main(String[] args) {
