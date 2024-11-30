@@ -22,6 +22,7 @@ package src.day4;
         Количество нечетных чисел: 4
         Сумма всех элементов массива: 46*/
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task1 {
@@ -30,42 +31,44 @@ public class Task1 {
         int a = scanner.nextInt();
         int[] array = new int[a];
 
-        System.out.print("[");
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 10);
-            System.out.print(array[i] + ",");
+            array[i] = (int) (Math.random() * 10); // как 2ой вариант array[i] = random.nextInt(10);
         }
-        System.out.print("] ");
+        System.out.print(Arrays.toString(array));
 
         System.out.println("\nИнформация о массиве:");
         System.out.println("Длина массива: " + array.length);
 
 
         int count = 0;
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             if (array[i] > 8) {
-                count++;}
+                count++;
+            }
         }
         System.out.println("Количество чисел больше 8: " + count);
 
         int count2 = 0;
-        for (int i = 0; i < array.length; i++){
-            if (array[i] ==1) {
-                count2++;}
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 1) {
+                count2++;
+            }
         }
         System.out.println("Количество чисел равное 1: " + count2);
 
         int count3 = 0;
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                count3++;}
+                count3++;
+            }
         }
         System.out.println("Количество четных чисел: " + count3);
 
         int count4 = 0;
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
-                count4++;}
+                count4++;
+            }
         }
         System.out.println("Количество нечетных чисел: " + count4);
 
@@ -75,8 +78,12 @@ public class Task1 {
         }
         System.out.println("Сумма всех элементов массива " + sum);
 
-
-
+       /* int sum1 = 0; // второй вариант
+        for (int i = 0; i < array.length; i++) {
+            sum1 += array[i];
+        }
+        System.out.println("Сумма всех элементов массива " + sum1);*/
     }
 }
+
 
