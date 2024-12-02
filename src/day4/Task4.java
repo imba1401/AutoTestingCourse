@@ -44,6 +44,6 @@ public class Task4 {
         }
 
         System.out.println(maxSum);
-        System.out.println(maxSumIndex);
+        System.out.println(maxSumIndex); //
     }
 }
