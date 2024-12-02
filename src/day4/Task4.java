@@ -14,8 +14,6 @@ package src.day4;
         *Пояснение. Первое число - сумма тройки [2789, 4, 8742]. Второе число - индекс
         первого элемента тройки, то есть индекс числа 2789.*/
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Random;
 
 public class Task4 {
