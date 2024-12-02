@@ -7,7 +7,7 @@ package src.day4;
         Пример:
         *Для простоты пример показан на массиве размера 10
         [1, 456, 1025, 65, 954, 2789, 4, 8742, 1040, 3254]
-        Тройка с максимальной суммой: [2789, 4, 8742]
+        Тройка с максимальной суммой: [2789, 4, 8742] - Это неверная тройка, верная с индексом 7
         Вывод в консоль:
         11535
         5
@@ -26,24 +26,21 @@ public class Task4 {
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10000);
         }
-        //  System.out.println(Arrays.toString(array)); // вывод массива
 
         int sumThree = 0;
         int maxSum = 0;
         int maxSumIndex = 0;
         for (int i = 0; i < array.length - 2; i++) {
-            sumThree = array[i] + array[i + 1] + array[i + 2];
-
-            //  System.out.println(array[i] + "," + array[i + 1] + "," + array[i + 2]); // просмотр правильного вывода  троек
-            //   System.out.print(sumThree + "  "); // просмотр правильного вывода сумм троек
+            for (int j = i; j < i + 3; j++) {
+                sumThree += array[j];
+            }
 
             if (sumThree > maxSum) {
                 maxSum = sumThree;
                 maxSumIndex = i;
             }
         }
-
         System.out.println(maxSum);
-        System.out.println(maxSumIndex); //
+        System.out.println(maxSumIndex);
     }
 }
