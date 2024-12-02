@@ -11,9 +11,39 @@ package src.day4;
         Вывод в консоль:
         11535
         5
-
         *Пояснение. Первое число - сумма тройки [2789, 4, 8742]. Второе число - индекс
         первого элемента тройки, то есть индекс числа 2789.*/
 
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.Random;
+
 public class Task4 {
+    public static void main(String[] args) {
+        int[] array = new int[100];
+        Random random = new Random();
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(10000);
+        }
+        //  System.out.println(Arrays.toString(array)); // вывод массива
+
+        int sumThree = 0;
+        int maxSum = 0;
+        int maxSumIndex = 0;
+        for (int i = 0; i < array.length - 2; i++) {
+            sumThree = array[i] + array[i + 1] + array[i + 2];
+
+            //  System.out.println(array[i] + "," + array[i + 1] + "," + array[i + 2]); // просмотр правильного вывода  троек
+            //   System.out.print(sumThree + "  "); // просмотр правильного вывода сумм троек
+
+            if (sumThree > maxSum) {
+                maxSum = sumThree;
+                maxSumIndex = i;
+            }
+        }
+
+        System.out.println(maxSum);
+        System.out.println(maxSumIndex);
+    }
 }
