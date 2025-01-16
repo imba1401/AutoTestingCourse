@@ -9,7 +9,7 @@ public class Task1 {
         System.out.println(car1.getModel());
         System.out.println(car1.getYear());
         System.out.println(car1.getColor());
-      //  System.out.println(car1.getModel() + " " + car1.getYear() + " " + car1.getColor());
+      //  System.out.println(car1.getModel() + " " + car1.getProducer() + " " + car1.getYear());
 
 
     }
