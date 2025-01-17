@@ -6,7 +6,7 @@ public class Task2 {
         arobus.setYear(2024);
         arobus.setLength(315);
         System.out.println(arobus.fillUp(300));
-        System.out.println (arobus.fillUp(700));
+        System.out.println(arobus.fillUp(700));
         arobus.info();
     }
 }

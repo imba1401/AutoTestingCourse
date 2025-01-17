@@ -26,6 +26,7 @@ public class Teacher {
     }
 
     private String estimation;
+
     public void evaluate(String studentName) {
         final int min = 2;
         int max = 5;
