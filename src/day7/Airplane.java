@@ -38,14 +38,16 @@ public class Airplane {
         return fuel;
     }
 
-    static void compareAirplanes(Airplane a1, Airplane a2) {
+    public static void compareAirplanes(Airplane a1, Airplane a2) {
 
         if (a1.length > a2.length) {
-            System.out.println(a1.length);
-        } else {
-            System.out.println(a2.length);
-        }
+            System.out.println("Первый самолет длиннее");
+        } else if (a1.length < a2.length)  {
+            System.out.println("Второй самолет длиннее");
+        }else{
+            System.out.println("Оба самолета равны");
 
+        }
     }
 }
 

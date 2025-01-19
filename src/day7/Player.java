@@ -1,44 +1,43 @@
 package src.day7;
 
+import java.util.Random;
+
 public class Player {
 
     private int stamina;
-    static final int MAX_STAMINA = 100;
-    static final int MIN_STAMINA = 0;
+    private static final int MAX_STAMINA = 100;
+    private static final int MIN_STAMINA = 0;
     static int countPlayers;
 
     public Player() {
-        final int min = 9; //для удобства проверки я уменьшила с 90 до 9
-        int max = 10; //для удобства проверки я уменьшила с 10 до 9
-        max -= min;
-        this.stamina = (int) ((Math.random() * ++max) + min);
-        countPlayers++;
-        if (countPlayers > 6) {
-            countPlayers = 6;
+        Random random = new Random();
+        this.stamina = random.nextInt(2) + 9; //для удобства проверки я уменьшила с 90 до 9
+        if (countPlayers < 6) {
+            countPlayers++;
         }
     }
 
     public int getStamina() {
-
         return stamina;
     }
 
     public void run(Player z) {
+        if (stamina == 0) {
+           return;
+        }
         stamina--;
         if (stamina == 0) {
-            countPlayers--; // как ограничить до 0?
+            countPlayers--;
         }
-        if (stamina < 0) {
-            stamina = 0;
-        }
+
     }
 
     public static void info() {
-        if (countPlayers >= 6) {
+        if (countPlayers == 6) {
             System.out.println("На поле нет свободных мест");
-        } else if (countPlayers > 1) {
-            System.out.println("Команды неполные. На поле еще есть " + countPlayers + " свободных мест");
-        } else if (countPlayers == 1) {
+        } else if (countPlayers < 5) {
+            System.out.println("Команды неполные. На поле еще есть " + (6 - countPlayers) + " свободных мест");
+        } else if (countPlayers == 5) {
             System.out.println("Команды неполные. На поле еще есть 1 свободное место");
         }
     }

@@ -39,22 +39,23 @@ public class Task2 {
         Player a6 = new Player();
         Player a7 = new Player();
         Player a8 = new Player();
-        System.out.println( Player.countPlayers); // вывод общего количества игроков
-
+        System.out.println("колво игроков " + Player.countPlayers); // вывод общего количества игроков, в тч проверка при количестве игроков больше 6
         Player.info(); // вывод сколько свободных мест вначале
 
-        a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);
-        a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);
-        a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);
-        a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);
-        a5.run(a4);a5.run(a4);a5.run(a4);a5.run(a4);a5.run(a4);a5.run(a4);a5.run(a4);a5.run(a4);a5.run(a4);
+        a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);a1.run(a1);//8
+        a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);a2.run(a2);//9
+        a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);a3.run(a3);//8
+        a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);a4.run(a4);//9
+        a5.run(a5);a5.run(a5);a5.run(a5);a5.run(a5);a5.run(a5);a5.run(a5);a5.run(a5);a5.run(a5);a5.run(a5);//8
+        a6.run(a6);a6.run(a6);a6.run(a6);a6.run(a6);a6.run(a6);a6.run(a6);a6.run(a6);a6.run(a6);
         System.out.println(a1.getStamina());
         System.out.println(a2.getStamina());
         System.out.println(a3.getStamina());
         System.out.println(a4.getStamina());
         System.out.println(a5.getStamina());
+        System.out.println(a6.getStamina());
 
-        System.out.println( Player.countPlayers);// вывод оставшегося количества игроков
+        System.out.println("колво игроков " + Player.countPlayers);// вывод оставшегося количества игроков
         Player.info(); // вывод сообщения
     }
 }

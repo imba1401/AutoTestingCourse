@@ -7,8 +7,8 @@ package src.day7;
 
 public class Task1 {
     public static void main(String[] args) {
-        Airplane a1 = new Airplane("British Airlines", 1990, 880, 6483);
-        Airplane a2 = new Airplane("British Airlines", 2000, 1000, 6483);
+        Airplane a1 = new Airplane("British Airlines1", 1990, 880, 6483);
+        Airplane a2 = new Airplane("British Airlines2", 2000, 1000, 6483);
         Airplane.compareAirplanes(a1,a2);
     }
 }
