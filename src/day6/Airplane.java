@@ -7,9 +7,6 @@ public class Airplane {
     private int weight;
     private int fuel;
 
-    public int getFuel() {
-        return fuel;
-    }
 
     public void setYear(int year) {
         this.year = year;
@@ -33,8 +30,7 @@ public class Airplane {
     }
 
     public int fillUp (int addFillUp) {
-        int newfuel = fuel + addFillUp;
-        fuel = newfuel;
-        return fuel;
+      fuel += addFillUp;
+      return fuel;
     }
 }

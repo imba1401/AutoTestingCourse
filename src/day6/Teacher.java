@@ -1,5 +1,7 @@
 package src.day6;
 
+import java.util.Random;
+
 public class Teacher {
     private String name;
     private String object;
@@ -28,16 +30,13 @@ public class Teacher {
     private String estimation;
 
     public void evaluate(String studentName) {
-        final int min = 2;
+        /*final int min = 2;
         int max = 5;
         max -= min;
-        int number = (int) ((Math.random() * ++max) + min);
+        int number = (int) ((Math.random() * ++max) + min);*/
+        Random random = new Random();
+        int number = random.nextInt(4)+2; //надо от 2 до 5. Поставим bound 4 и будет считаться как 0,1,2,3 и прибавляем 2, получаем 2,3,4,5
 
-      /*  if (number == 2) {
-            estimation = "неудовлетворительно";
-        }
-        System.out.println("Преподаватель " + name + " оценил студента с именем " + studentName +
-                " по предмету " + object + " на оценку " + estimation);*/
         switch (number) {
             case 2:
                 estimation = "неудовлетворительно";
