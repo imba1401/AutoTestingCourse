@@ -1,6 +1,8 @@
-package src.day9;
+package src.day9.task1;
 
-public class Student extends Human{
+import src.day9.task1.Human;
+
+public class Student extends Human {
     private String studentsGroupName;
 
     public Student(String name, String studentsGroupName) {
@@ -19,6 +21,6 @@ public class Student extends Human{
     @Override
     public void printInfo(){
         super.printInfo();
-        super.printInfo();
+        System.out.println("Этот студент с именем " + getName());
     }
 }

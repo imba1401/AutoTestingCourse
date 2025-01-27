@@ -1,7 +1,7 @@
-package src.day9;
+package src.day9.task1;
 
 public class Human {
-    protected String name;
+    private String name;
 
     public Human(String name) {
         this.name = name;

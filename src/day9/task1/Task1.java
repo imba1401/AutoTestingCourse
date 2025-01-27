@@ -1,4 +1,4 @@
-package src.day9;
+package src.day9.task1;
 /*1. Создайте класс Человек (англ. Human). У человека должно быть поле “имя” (англ.
 name). На это поле в классе должен быть конструктор, get и set методы. Также, у
 Человека должен быть метод printInfo(), который выводит в консоль информацию
@@ -33,11 +33,11 @@ super)
 
 public class Task1 {
     public static void main(String[] args) {
-        Student s1 = new Student("Девид","55");
+        Student s1 = new Student("Девид", "55");
         System.out.println(s1.getStudentsGroupName());
         Teacher t1 = new Teacher("Мистер Беннет", "литература");
         System.out.println(t1.getObject());
-        s1. printInfo();
+        s1.printInfo();
         t1.printInfo();
 
     }

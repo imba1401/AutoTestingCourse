@@ -1,6 +1,8 @@
-package src.day9;
+package src.day9.task1;
 
-public class Teacher extends Human{
+import src.day9.task1.Human;
+
+public class Teacher extends Human {
     private String object;
 
     public Teacher(String name, String object) {
@@ -19,6 +21,6 @@ public class Teacher extends Human{
     @Override
     public void printInfo(){  //(должно выводиться именно две строки - необходимо использовать ключевое слово super)
         super.printInfo();
-        System.out.println("Этот преподаватель с именем " + name);
+        System.out.println("Этот преподаватель с именем " + getName());
     }
 }
