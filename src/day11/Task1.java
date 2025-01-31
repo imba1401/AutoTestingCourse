@@ -27,6 +27,7 @@ countOrder в классе Warehouse на 1. При вызове doWork() у К�
 public class Task1 {
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
+        Warehouse warehouse2 = new Warehouse();
         Picker picker = new Picker(warehouse);
         Courier courier = new Courier(warehouse);
 
