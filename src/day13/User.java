@@ -1,10 +1,11 @@
 package src.day13;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class User {
     private String username;
-    private List <User> subscriptions;
+    private List<User> subscriptions;
 
     public User(String username) {
         this.username = username;
@@ -18,11 +19,13 @@ public class User {
     public List<User> getSubscriptions() {
         return subscriptions;
     }
-    public void subscribe(User user){
+
+    public void subscribe(User user) {
         this.subscriptions.add(user);
     }
-    public boolean isSubscribed(User user){
-        for (User currentUser: subscriptions) {
+
+    public boolean isSubscribed(User user) {
+        for (User currentUser : subscriptions) {
             if (currentUser.getUsername().equals(user.getUsername()))
                 return true;
         }
@@ -33,11 +36,11 @@ public class User {
         return this.isSubscribed(user) && user.isSubscribed(this); // а false как?
     }
 
-    public void sendMessage(User user, String text){
+    public void sendMessage(User user, String text) {
         MessageDatabase.sendMessage(this, user, text);
     }
 
-    public String toString(){
+    public String toString() {
         return username;
     }
 

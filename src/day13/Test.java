@@ -26,7 +26,7 @@ public class Test {
         user3.sendMessage(user1, "Море, песочек и хорошая книга, и много много плавания");
 
         MessageDatabase.showDialog(user1, user3);
-       // System.out.println(MessageDatabase.getMessages()); (проверка вывода списка)
+        // System.out.println(MessageDatabase.getMessages()); (проверка вывода списка)
 
     }
 }

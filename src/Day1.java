@@ -1,7 +1,7 @@
 package src;
 
 public class Day1 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         System.out.println("\nЗадание 1");
         int counter = 0;
         while (counter < 10) {
@@ -31,9 +31,9 @@ public class Day1 {
 
         System.out.println("\nСледующее задание 5");
 
-        for (int i = 1980; i < 2021; i= i+4) {
-                System.out.println("Олимпиада " + i + " года");
-            }
+        for (int i = 1980; i < 2021; i = i + 4) {
+            System.out.println("Олимпиада " + i + " года");
+        }
 
 
         System.out.println("\nСледующее задание 6");

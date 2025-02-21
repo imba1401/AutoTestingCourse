@@ -20,10 +20,6 @@ public class MessageDatabase {
                     || message.getSender() == u2 && message.getReceiver() == u1) {
                 System.out.println(message.getSender() + ": " + message.getText());
             }
-
         }
-
     }
-
-
 }
